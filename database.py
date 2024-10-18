@@ -2,6 +2,12 @@ name = input()
 password = input()
 numOfPlanets = 1
 life = 0
+age = 0
+print("There are a couple basic commands.")
+print("view is the command to view your stats.")
+print("destroy is the command to destroy a planet. Use it wisely.")
+print("add is the command to make a planet.")
+print("When you're ready use the big bang command. It will give you 100 life. Do not waste your life.")
 if name == "Liam Monteith" and password == "1234":
     print("Welcome to live chaos!")
     print("Please use the start command.")
@@ -12,7 +18,7 @@ if name == "Liam Monteith" and password == "1234":
         if cmd1 == "start":
             cmd2 = input()
             if cmd2 == "view":
-                print(f"You have {numOfPlanets} planets, and {life}% life.")
+                print(f"You have {numOfPlanets} planets, and {life}% life. The current age is {age}.")
             if cmd2 == "destroy":
                 numOfPlanets -= 1
                 if numOfPlanets == 0:
@@ -26,6 +32,7 @@ if name == "Liam Monteith" and password == "1234":
             if cmd2 == "big bang":
                 life = 100
                 print("The dinosaur age has started.")
+                print("Use the advance command to go to a new age!")
                 age = 1
             if cmd2 == "war":
                 print("The war has started...")
@@ -38,16 +45,26 @@ if name == "Liam Monteith" and password == "1234":
             if cmd2 == "advance":
                 if age == 1:
                     age = 2
+                    print("Oh look! Some humans!")
                     cmd2 = input()
                 if age == 2:
                     age = 3
                     cmd2 = input()
+                    print("They learned how to fight?!? This is not how I intended this to go...")
+                    print("war command unlocked.")
                 if age == 3:
                     age = 4
                     cmd2 = input()
+                    print("Wow! It has gotten so modern!")
+                    print("You have now unlocked space flight.")
                 if age == 4:
                     age = 5
                     cmd2 = input()
-
+                    print("Oh, no... They advanced too far. They found me... We need to eliminate them and start over.")
+                    print("Run the asteroid command!")
+            if cmd2 == "astoroid":
+                age = 6
+                print("Lets make something new.")
+                cmd3 = input()
 else:
     print("Password denied.")
