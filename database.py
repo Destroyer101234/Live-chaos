@@ -3,11 +3,6 @@ password = input()
 numOfPlanets = 1
 life = 0
 age = 0
-print("There are a couple basic commands.")
-print("view is the command to view your stats.")
-print("destroy is the command to destroy a planet. Use it wisely.")
-print("add is the command to make a planet.")
-print("When you're ready use the big bang command. It will give you 100 life. Do not waste your life.")
 if name == "Liam Monteith" and password == "1234":
     print("Welcome to live chaos!")
     print("Please use the start command.")
